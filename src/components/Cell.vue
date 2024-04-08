@@ -16,22 +16,22 @@ const cellClasses = computed(() => {
     const valueNumber = props.cell.valueNumber;
 
     const colorMap = {
-        2: { backgroundColor: '#eee4da', textColor: '#776e65' },
-        4: { backgroundColor: '#ede0c8', textColor: '#776e65' },
-        8: { backgroundColor: '#f2b179', textColor: '#f9f6f2' },
-        16: { backgroundColor: '#f59563', textColor: '#f9f6f2' },
-        32: { backgroundColor: '#f67c5f', textColor: '#f9f6f2' },
-        64: { backgroundColor: '#f65e3b', textColor: '#f9f6f2' },
-        128: { backgroundColor: '#edcf72', textColor: '#f9f6f2' },
-        256: { backgroundColor: '#edcc61', textColor: '#f9f6f2' },
+        2: { backgroundColor: 'bg-cell-2', textColor: 'text-cell-black' },
+        4: { backgroundColor: 'bg-cell-4', textColor: 'text-cell-black' },
+        8: { backgroundColor: 'bg-cell-8', textColor: 'text-cell-white' },
+        16: { backgroundColor: 'bg-cell-16', textColor: 'text-cell-white' },
+        32: { backgroundColor: 'bg-cell-32', textColor: 'text-cell-white' },
+        64: { backgroundColor: 'bg-cell-64', textColor: 'text-cell-white' },
+        128: { backgroundColor: 'bg-cell-128', textColor: 'text-cell-white' },
+        256: { backgroundColor: 'bg-cell-256', textColor: 'text-cell-white' },
         default: { backgroundColor: '#cdc1b4', textColor: '#000' }
     };
 
     const { backgroundColor, textColor } = colorMap[valueNumber] || colorMap.default;
 
     return {
-        [`bg-[${backgroundColor}]`]: true,
-        [`text-[${textColor}]`]: true
+        [`${backgroundColor}`]: true,
+        [`${textColor}`]: true
     };
 });
 </script>

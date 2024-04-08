@@ -3,8 +3,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "weather-primary": "#00668A",
-        "weather-secondary": "#004E71",
+        "cell-black": "#776e65",
+        "cell-white": "#f9f6f2",
+        "cell-2": "#eee4da",
+        "cell-4": "#ede0c8",
+        "cell-8": "#f2b179",
+        "cell-16": "#f59563",
+        "cell-32": "#f67c5f",
+        "cell-64": "#f65e3b",
+        "cell-128": "#edcf72",
+        "cell-256": "#edcc61",
       },
     },
     fontFamily: {
